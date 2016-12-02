@@ -1,0 +1,4 @@
+site_name: djangorestframework-package
+site_description: Your project description goes here
+repo_url: https://github.com/spkuehl/rpm-dash
+site_dir: html
