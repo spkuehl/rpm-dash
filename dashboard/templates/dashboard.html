@@ -11,3 +11,16 @@
 
 
 <div id="chart_div" style="width:100%; height: 1000;"></div>
+<button id="signal">POST</button>
+<script>
+$(document).ready(function(){
+  $("#signal").click(function(e){
+      e.preventDefault();
+    $.ajax({type: "POST",
+            url: "/signal/",
+            data: {csrfmiddlewaretoken: '{{ csrf_token }}'},
+            dataType: 'json',
+    });
+  });
+});
+</script>

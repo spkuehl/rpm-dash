@@ -74,10 +74,7 @@ setInterval(function() {
     dataType: 'json',
     success: function (data) {
       today = new Date();
-      signals = data.filter(function (el) {
-        elDate = new Date(el.time_recieved);
-        return  elDate.getDate() == today.getDate();
-      });
+      signals = data;
       firstSignalDate = new Date(signals[0].time_recieved);
       lastSignalDate = new Date();
       duration = (lastSignalDate - firstSignalDate) / 1000.0 / 60.0;
