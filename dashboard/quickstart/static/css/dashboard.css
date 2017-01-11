@@ -1,0 +1,10 @@
+#chart_div path:nth-child(2) {
+  stroke:black;
+  stroke-width: 10px;
+  fill:black;
+  fill-opacity:.75;
+}
+
+#chart_div circle:nth-child(3) {
+  fill:black;
+}
